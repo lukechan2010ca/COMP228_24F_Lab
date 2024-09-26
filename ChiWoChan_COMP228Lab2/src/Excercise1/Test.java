@@ -1,3 +1,5 @@
+package Excercise1;
+
 import javax.swing.*;
 import java.util.Random;
 
@@ -70,7 +72,7 @@ public class Test {
     public void displayResults() {
         int totalQuestions = questions.length;
         int percentage = (correctCount * 100) / totalQuestions;
-        String resultMessage = String.format("Test Completed!\nCorrect answers: %d\nIncorrect answers: %d\nPercentage of the correct answers: %d%%", correctCount, incorrectCount, percentage);
+        String resultMessage = String.format("Excercise1.Test Completed!\nCorrect answers: %d\nIncorrect answers: %d\nPercentage of the correct answers: %d%%", correctCount, incorrectCount, percentage);
         JOptionPane.showMessageDialog(null, resultMessage);
     }
 }

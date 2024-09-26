@@ -1,3 +1,5 @@
+package Excercise3;
+
 public class exercise3
 {
     // Method to add two integers
@@ -19,9 +21,9 @@ public class exercise3
         return sum;
     }
 
-    // Main method to test the overloaded add methods
+    // Excercise1.Main method to test the overloaded add methods
     public static void main(String[] args) {
-        // Test cases for the add methods
+        // Excercise1.Test cases for the add methods
         int a = 3, b = 4;
         double c = 3.45, d = 7.55;
         int[] arrayForAdd = {1, 2, 3, 4, 5}; // Array of integersing elements of the array

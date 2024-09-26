@@ -1,3 +1,5 @@
+package Excercise2;
+
 import javax.swing.JOptionPane;
 import java.util.Random;
 
@@ -29,12 +31,12 @@ public class Lotto {
         return numbers[0] + numbers[1] + numbers[2];
     }
 
-    // Main method - entry point of the program
+    // Excercise1.Main method - entry point of the program
     public static void main(String[] args) {
         playLottoGame();
     }
 
-    // Method to run the Lotto game
+    // Method to run the Excercise2.Lotto game
     private static void playLottoGame() {
         int userChoice = getUserChoice(); // Get the user's number choice
 

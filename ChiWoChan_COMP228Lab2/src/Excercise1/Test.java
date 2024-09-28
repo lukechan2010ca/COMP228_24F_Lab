@@ -20,6 +20,7 @@ public class Test {
 
     // Method to simulate the questions
     public String simulateQuestion(int questionNumber) {
+
         return questions[questionNumber];
     }
 
@@ -32,7 +33,6 @@ public class Test {
         // Display final results after all questions are answered
         displayResults();
     }
-
 
     // Method to check the user's answer
     public void checkAnswer(char userAnswer, int questionNumber) {

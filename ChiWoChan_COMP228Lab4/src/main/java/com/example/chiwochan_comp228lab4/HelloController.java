@@ -170,12 +170,12 @@
             //if checkbox is checked, add "Student Council" or/and "Volunteer Work to personal info
             if (studentCouncilCheck.isSelected()) {
                 if (volunteerWorkCheck.isSelected()) {
-                    personalInfo.append("Additional Info:").append("\n").append("Student Council").append(",").append("Volunteer Work\n");
+                    personalInfo.append("Additional Info:").append("\nInvolvement in: ").append("Student Council").append(", ").append("Volunteer Work\n");
                 } else {
-                    personalInfo.append("Additional Info:").append("\n").append("Student Council\n");
+                    personalInfo.append("Additional Info:").append("\nInvolvement in: ").append("Student Council\n");
                 }
             } else if (volunteerWorkCheck.isSelected()) {
-                personalInfo.append("Additional Info:").append("\n").append("Volunteer Work\n");
+                personalInfo.append("Additional Info:").append("\nInvolvement in: ").append("Volunteer Work\n");
             }
             //if checkbox is not checked,nothing need to be added to personal info.
             outputArea.appendText(personalInfo.toString());

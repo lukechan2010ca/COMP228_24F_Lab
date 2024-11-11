@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.chiwochan_comp228lab4.HelloController" hgap="10" vgap="10"
+          alignment="CENTER">
+
+  <!-- Set Column Constraints -->
+  <columnConstraints>
+    <ColumnConstraints percentWidth="25"/>
+    <ColumnConstraints percentWidth="25"/>
+    <ColumnConstraints percentWidth="25"/>
+    <ColumnConstraints percentWidth="25"/>
+
+  </columnConstraints>
+
+  <!-- Personal Info Labels and Input Fields -->
+  <Label text="Name:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+  <Label text="Address:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+  <Label text="Province:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+  <Label text="City:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+  <Label text="Postal Code:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+  <Label text="Phone Number:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+  <Label text="Email:" GridPane.rowIndex="6" GridPane.columnIndex="0" />
+  <Label text="Name:" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+  <TextField fx:id="nameField" promptText="Enter Full name" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+  <TextField fx:id="addressField" promptText="Enter Address" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+  <TextField fx:id="provinceField" promptText="Enter Province" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+  <TextField fx:id="cityField" promptText="Enter City" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+  <TextField fx:id="postalCodeField" promptText="Enter Postal Code" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+  <TextField fx:id="phoneField" promptText="Enter Phone Number" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+  <TextField fx:id="emailField" promptText="Enter Email" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+  <!-- Extracurricular Activities vbox in column 3 have 2 checked box-->
+  <VBox GridPane.rowIndex="0" GridPane.columnIndex="2" GridPane.rowSpan="7" prefHeight="200">
+    <CheckBox fx:id="studentCouncilCheck" text="Student Council" minHeight="100" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+    <CheckBox fx:id="volunteerWorkCheck" text="Volunteer Work" minHeight="100" GridPane.rowIndex="4" GridPane.columnIndex="2"/>
+  </VBox>
+
+  <!-- Vbox for Major and Course Selection in column 3 -->
+  <VBox alignment="CENTER" GridPane.rowIndex="0" GridPane.columnIndex="3" GridPane.rowSpan="7" prefHeight="200">
+    <!--Major Selection-->
+  <HBox GridPane.rowIndex="0" GridPane.columnIndex="3" spacing="15" minHeight="30" alignment="CENTER">
+    <RadioButton fx:id="csMajorRadio" text="Computer Science" onAction="#changeMajor"/>
+    <RadioButton fx:id="businessMajorRadio" text="Business" onAction="#changeMajor"/>
+  </HBox>
+    <!--Combobox fill the column 3 fully)-->
+  <ComboBox fx:id="courseComboBox" promptText="Select Course" GridPane.rowIndex="1" GridPane.columnIndex="3" minHeight="50" prefWidth="Infinity" onAction="#addCourse"/>
+  <ListView fx:id="courseListView" GridPane.rowIndex="3" GridPane.columnIndex="2" minHeight="100"/>
+  </VBox>
+
+  <!-- Display button underneath the email and horizontally centered -->
+  <HBox alignment="CENTER" GridPane.rowIndex="7" GridPane.columnIndex="0" GridPane.columnSpan="4">
+  <Button fx:id="displayButton" text="Display" onAction="#onDisplayButtonClick"/>
+  </HBox>
+
+  <!-- Output Area -->
+  <TextArea fx:id="outputArea" wrapText="true" editable="false" GridPane.rowIndex="8" GridPane.columnSpan="4"
+            prefHeight="150" promptText="Information will be displayed here" GridPane.fillHeight="true"/>
+
+</GridPane>

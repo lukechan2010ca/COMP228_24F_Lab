@@ -4,8 +4,8 @@ import javax.swing.JOptionPane;
 import java.util.Random;
 
 public class Lotto {
-    private final int[] numbers; // Array to store 3 random numbers
-    private final Random random;
+    private int[] numbers; // instance variable Array to store 3 random numbers
+    private Random random;
 
     // Constructor to initialize the Lotto3 object
     public Lotto() {
@@ -31,12 +31,12 @@ public class Lotto {
         return numbers[0] + numbers[1] + numbers[2];
     }
 
-    // Excercise1.Main method - entry point of the program
+    // Main method - entry point of the program
     public static void main(String[] args) {
         playLottoGame();
     }
 
-    // Method to run the Excercise2.Lotto game
+    // Method to run the Lotto game
     private static void playLottoGame() {
         int userChoice = getUserChoice(); // Get the user's number choice
 

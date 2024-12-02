@@ -80,7 +80,7 @@
         private final ObservableList<String> businessCourses = FXCollections.observableArrayList("Marketing", "Accounting", "Management", "Economics");
 
         @FXML
-        private void initialize() {
+        private void initialize() {//initialize method to set the radio buttons and combo box
             // Toggle group for major selection
             ToggleGroup majorGroup = new ToggleGroup();
             csMajorRadio.setToggleGroup(majorGroup);
@@ -180,5 +180,4 @@
             //if checkbox is not checked,nothing need to be added to personal info.
             outputArea.appendText(personalInfo.toString());
         }
-
     }

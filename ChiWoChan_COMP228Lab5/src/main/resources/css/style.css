@@ -1,0 +1,26 @@
+.button {
+    -fx-background-color: #153870;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 5px 10px;
+}
+
+.label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #333;
+}
+
+.textfield {
+    -fx-background-color: #f4f4f4;
+    -fx-border-color: #ccc;
+    -fx-padding: 5px;
+    -fx-font-size: 12px;
+}
+
+.title {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.tooltip-info {
+}

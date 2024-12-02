@@ -1,7 +1,7 @@
 package Exercise1;
 
 class Health extends Insurance {
-
+    // Constructor
     public Health(String healthInsurance){
         super("Health Insurance");
     }
